@@ -38,8 +38,11 @@ var senderId;
 
 // handler receiving messages
 app.post('/webhook', function (req, res) {
+    console.log("Facebook webhook fired - message from Facebook received.");
     var events = req.body.entry[0].messaging;
-    for (i = 0; i < events.length; i++) {
+    var i = 0;
+    
+    for (i; i < events.length; i++) {
         var event = events[i];
         if (event.message && event.message.text) {
             
@@ -47,19 +50,13 @@ app.post('/webhook', function (req, res) {
                 databaseHandler.update("questions", event.message.text);
                 var data = {
                     question: event.message.text,
-                    suggestions: [
-                        "First suggestion",
-                        "Second suggestion",
-                        "Third suggestion"
-                    ]
+                    suggestions: databaseHandler.getSuggestions(event.message.text)
                 };
                 
-                io.emit('question', data);
+                io.emit('question', { "data": data, "sender": event.sender.id });
                 
                 senderId = event.sender.id;
             }
-            // console.log("sender id:" + event.sender.id);
-            // facebook.sendMessage(event.sender.id, {text: "Echo: " + event.message.text});
         }
     }
     res.sendStatus(200);
@@ -92,14 +89,18 @@ var io     = require('socket.io').listen(server);
 io.on('connection', function(socket) {
 
     console.log('Client connected.');
+    // socket.emit('conversations', facebook.getConversations());
 
     // Disconnect listener
     socket.on('disconnect', function() {
         console.log('Client disconnected.');
     });
     
-    socket.on('answer', function(data) {
-        facebook.sendMessage(senderId, {text: data});
-        databaseHandler.update('answers', data);
+    socket.on('answer', function(response) {
+        console.log(response);
+        facebook.sendMessage(response.user, { text: response.text });
+        var answerId = databaseHandler.update('answers', response.text);
+        
+        databaseHandler.addLink(response.question, answerId);
     });
 });

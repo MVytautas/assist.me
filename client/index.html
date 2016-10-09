@@ -2,6 +2,8 @@
 <html lang="en" ng-app>
   <head>
     <title>Chat Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
@@ -10,11 +12,95 @@
       body {
         padding-top: 60px;
       }
+      
+      city {display:none;}
+      
+      div.bhoechie-tab-container{
+      z-index: 10;
+      background-color: #ffffff;
+      padding: 0 !important;
+      border-radius: 4px;
+      max-width: 100px;
+      mmax-height: 20px;
+      -moz-border-radius: 4px;
+      border:1px solid #ddd;
+      margin-top: 20px;
+      margin-left: 30px;
+      -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      background-clip: padding-box;
+      opacity: 0.97;
+      filter: alpha(opacity=97);
+      }
+      
+      div.bhoechie-tab-menu{
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+      }
+      div.bhoechie-tab-menu div.list-group{
+        margin-bottom: 0;
+      }
+      div.bhoechie-tab-menu div.list-group>a{
+        margin-bottom: 0;
+      }
+      div.bhoechie-tab-menu div.list-group>a .glyphicon,
+      div.bhoechie-tab-menu div.list-group>a .fa {
+        color: #5A55A3;
+      }
+      div.bhoechie-tab-menu div.list-group>a:first-child{
+        border-top-right-radius: 0;
+        -moz-border-top-right-radius: 0;
+      }
+      div.bhoechie-tab-menu div.list-group>a:last-child{
+        border-bottom-right-radius: 0;
+        -moz-border-bottom-right-radius: 0;
+      }
+      div.bhoechie-tab-menu div.list-group>a.active,
+      div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+      div.bhoechie-tab-menu div.list-group>a.active .fa{
+        background-color: #5A55A3;
+        background-image: #5A55A3;
+        color: #ffffff;
+      }
+      div.bhoechie-tab-menu div.list-group>a.active:after{
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        margin-top: -13px;
+        border-left: 0;
+        border-bottom: 13px solid transparent;
+        border-top: 13px solid transparent;
+        border-left: 10px solid #5A55A3;
+      }
+      
+      div.bhoechie-tab-content{
+        background-color: #ffffff;
+        /* border: 1px solid #eeeeee; */
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+      
+      div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+        display: none;
+      }
+      
     </style>
     <script src="/script.js"></script>
+    
+    <script>
+      
+      
+      
     </script>
   </head>
   <body>
+    
+    
+    
+    
     <div class="container" ng-controller="ChatController">
       <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
@@ -24,16 +110,89 @@
         </div>
       </div>
       <div class="page-header">
-        <h1>Chat Example</h1>
+        <h1>Service Desk</h1>
+        <center>
+          <img src="img/14647461_1278054412224883_541859586_o.png" alt="logo" align="middle" style="width:304px;height:228px;">
+        </center>
       </div>
+      
+      
+    <nav class="w3-sidenav w3-light-grey w3-card-2" style="width:130px">
+    <div class="w3-container">
+    <h5>Menu</h5>
+  </div>
+    <a href="#" class="tablink" onclick="openCity(event, 'London')">Vytautas</a>
+    <a href="#" class="tablink" onclick="openCity(event, 'Paris')">Simonas</a>
+    <a href="#" class="tablink" onclick="openCity(event, 'Tokyo')">Deividas</a>
+  </nav>
+
+<div style="margin-left:130px">
+  <div class="w3-padding">USERS</div>
+
+  <div id="Vytautas" class="w3-container city">
+    <h2>Vytautas</h2>
+ </div>
+
+  <div id="Simonas" class="w3-container city">
+    <h2>Simonas</h2>
+</div>
+
+  <div id="Deividas" class="w3-container city">
+    <h2>Deividas</h2>
+ </div>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+      
+      
+    <!--  <div class="container">-->
+	   <!-- <div class="row">-->
+    <!--    <div class="col-lg-5 col-md-5 col-sm-8 col-xs-9 bhoechie-tab-container">-->
+    <!--        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">-->
+    <!--          <div class="list-group">-->
+    <!--            <a href="#" class="list-group-item active text-center">-->
+    <!--              <h4 class="glyphicon glyphicon-plane"></h4><br/>Vytautas-->
+    <!--            </a>-->
+    <!--            <a href="#" class="list-group-item text-center">-->
+    <!--              <h4 class="glyphicon glyphicon-road"></h4><br/>Deividas-->
+    <!--            </a>-->
+    <!--            <a href="#" class="list-group-item text-center">-->
+    <!--              <h4 class="glyphicon glyphicon-home"></h4><br/>Simonas-->
+    <!--            </a>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
+      
       <div class="row">
         <div class="span3">
           <ul class="nav nav-list well">
             <li class="nav-header">Suggestions</li>
-            <li ng-repeat="suggestion in suggestions">{{ suggestion }}</li>
+            <li ng-repeat="suggestion in users[activeUser].suggestions" ng-click="useSuggestion(suggestion)">{{ suggestion }}</li>
           </ul>
         </div>
         <div class="span9">
+          <h3>Active users</h3>
+          <ul>
+            <li ng-repeat="(key, user) in users" ng-click="changeActive(key)">{{ users[key].name }}</li>
+          </ul>
+          <h3>Current user: {{ users[activeUser].name }}</h3>
           <table class="table table-striped table-bordered">
             <thead>
               <tr>
@@ -41,13 +200,16 @@
               </tr>
             </thead>
             <tbody>
-              <tr ng-if="message.bot" ng-repeat="message in messages">
+              <tr ng-repeat="message in users[activeUser].messages">
                 <td ng-class="{ user: !message.bot, bot: message.bot }" >{{ message.text }}</td>
               </tr>
+              <!--<tr ng-if="users[activeUser].messages.length === 0">-->
+              <!--  <td style="text-align: center">No messages</td>-->
+              <!--</tr>-->
             </tbody>
           </table>
           <div class="row controls">
-            <form ng-submit="send()">
+            <form ng-submit="send(text)">
               <div class="input-append span7">
                 <input type="text" class="span6" ng-model="text" placeholder="Message">
                 <input type="submit" class="span1 btn btn-primary" value="Send" ng-disabled="!text">

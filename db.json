@@ -1,146 +1,248 @@
 {
-    "questions": [
+    "answers": [
         {
-            "text": "Algisssxa",
+            "text": "Bandau",
             "id": 1,
             "count": 1
         },
         {
-            "text": "Algis",
+            "text": "la",
             "id": 2,
             "count": 1
         },
         {
-            "text": "Deividas",
+            "text": "nice",
             "id": 3,
             "count": 1
         },
         {
-            "text": "bananas",
+            "text": "test",
             "id": 4,
-            "count": 13
+            "count": 8
         },
         {
-            "text": "Dubajus",
+            "text": "Second suggestion",
             "id": 5,
-            "count": 1
+            "count": 2
         },
         {
-            "text": "Testas",
+            "text": "Third suggestion",
             "id": 6,
             "count": 2
         },
         {
-            "text": "Test",
+            "text": "hi",
             "id": 7,
+            "count": 1
+        },
+        {
+            "text": "First suggestion",
+            "id": 8,
+            "count": 2
+        },
+        {
+            "text": "tes",
+            "id": 9,
             "count": 6
         },
         {
-            "text": "Labux",
-            "id": 8,
-            "count": 1
-        },
-        {
-            "text": "Kas tu?",
-            "id": 9,
-            "count": 1
-        },
-        {
-            "text": "Čia testas",
+            "text": "1",
             "id": 10,
             "count": 1
         },
         {
-            "text": "Fake",
+            "text": "te",
             "id": 11,
-            "count": 1
+            "count": 2
         },
         {
-            "text": "Fake2",
+            "text": "labas",
             "id": 12,
-            "count": 1
+            "count": 3
         },
         {
-            "text": "Nee",
+            "text": "dar labas",
             "id": 13,
             "count": 1
         },
         {
-            "text": "We",
+            "text": "dar",
             "id": 14,
             "count": 1
         },
         {
-            "text": "Works",
+            "text": "nu",
             "id": 15,
-            "count": 1
+            "count": 3
         },
         {
-            "text": "Bandyms",
+            "text": "tai k1 tu?",
             "id": 16,
             "count": 1
         },
         {
-            "text": "Labas ir tau",
+            "text": "la?",
             "id": 17,
             "count": 1
         },
         {
-            "text": "Labas",
+            "text": "rasyk",
             "id": 18,
-            "count": 3
+            "count": 1
         },
         {
-            "text": "Ką tu?",
+            "text": "uo",
             "id": 19,
             "count": 1
         },
         {
-            "text": "Jau gaunu",
+            "text": "o",
             "id": 20,
-            "count": 1
-        },
-        {
-            "text": "Labas ar gauni?",
-            "id": 21,
-            "count": 1
-        }
-    ],
-    "answers": [
-        {
-            "text": "Bandyms",
-            "id": 1,
             "count": 2
         },
         {
-            "text": "Kitoks",
-            "id": 2,
+            "text": "e",
+            "id": 21,
+            "count": 3
+        },
+        {
+            "text": "a",
+            "id": 22,
             "count": 1
         },
         {
-            "text": "Bandau",
-            "id": 3,
+            "text": "eik",
+            "id": 23,
+            "count": 2
+        },
+        {
+            "text": "kitas klausiams",
+            "id": 24,
+            "count": 2
+        },
+        {
+            "text": "ne testas",
+            "id": 25,
             "count": 1
         },
         {
-            "text": "Dar vienas",
-            "id": 4,
+            "text": "tikrai",
+            "id": 26,
+            "count": 1
+        },
+        {
+            "text": "ar supranti mane?",
+            "id": 27,
+            "count": 1
+        },
+        {
+            "text": "bananas",
+            "id": 28,
+            "count": 1
+        },
+        {
+            "text": "apelsinas",
+            "id": 29,
             "count": 1
         },
         {
             "text": "Labas",
+            "id": 30,
+            "count": 2
+        }
+    ],
+    "questions": [
+        {
+            "text": "Laba",
+            "id": 1,
+            "count": 2
+        },
+        {
+            "text": "Aa",
+            "id": 2,
+            "count": 1
+        },
+        {
+            "text": "La",
+            "id": 3,
+            "count": 1
+        },
+        {
+            "text": "Ee",
+            "id": 4,
+            "count": 1
+        },
+        {
+            "text": "E",
             "id": 5,
-            "count": 1
+            "count": 2
         },
         {
-            "text": "Nu labas",
+            "text": "Jo",
             "id": 6,
-            "count": 1
+            "count": 3
         },
         {
-            "text": "Labas ir tau",
+            "text": "Gg",
             "id": 7,
             "count": 1
+        },
+        {
+            "text": "Labas",
+            "id": 8,
+            "count": 16
+        },
+        {
+            "text": "Kaip sekas",
+            "id": 9,
+            "count": 1
+        },
+        {
+            "text": "Hoi",
+            "id": 10,
+            "count": 1
+        },
+        {
+            "text": "Nu ko",
+            "id": 11,
+            "count": 1
+        },
+        {
+            "text": "Wut?",
+            "id": 12,
+            "count": 1
+        },
+        {
+            "text": "Klausau",
+            "id": 13,
+            "count": 11
+        },
+        {
+            "text": "Testas?",
+            "id": 14,
+            "count": 1
+        },
+        {
+            "text": "Batai",
+            "id": 15,
+            "count": 1
         }
-    ]
+    ],
+    "links": {
+        "5": [
+            "e",
+            "a",
+            "eik"
+        ],
+        "13": [
+            "kitas klausiams",
+            "bananas",
+            "apelsinas"
+        ],
+        "14": [
+            "ne testas",
+            "tikrai",
+            "ar supranti mane?"
+        ]
+    }
 }
