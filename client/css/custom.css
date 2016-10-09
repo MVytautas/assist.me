@@ -45,3 +45,8 @@ a {
     height: 40px;
     padding-right: 10px;
 }
+
+.page-header {
+    margin: 0;
+    padding: 0;
+}

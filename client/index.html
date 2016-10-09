@@ -29,7 +29,7 @@
     
       <div class="col-xs-8">
         <h3 class="user-name"><img class="user-image" ng-src="{{ '/img/' + users[activeUser].img + '.png' }}"> {{ users[activeUser].name }}</h3>
-        <ul>
+        <ul style="min-height: 140px;">
           <li ng-if="users[activeUser].messages.length === 0">No messages</li>
           <li ng-repeat="message in users[activeUser].messages" ng-class="{ user: !message.bot, bot: message.bot }">
             <span class="label label-primary">{{ message.text }}</span>

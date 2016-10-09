@@ -78,7 +78,7 @@
         {
             "text": "Where is my order?",
             "id": 16,
-            "count": 2
+            "count": 3
         },
         {
             "text": "I don't have one",
@@ -214,6 +214,16 @@
             "text": "Nike",
             "id": 43,
             "count": 1
+        },
+        {
+            "text": "Bye",
+            "id": 44,
+            "count": 1
+        },
+        {
+            "text": "bye",
+            "id": 45,
+            "count": 1
         }
     ],
     "answers": [
@@ -279,7 +289,7 @@
         {
             "text": "Could you provide your order number?",
             "id": 13,
-            "count": 4
+            "count": 5
         },
         {
             "text": "Ok",
@@ -385,6 +395,16 @@
             "text": "Yes, we have nike",
             "id": 34,
             "count": 1
+        },
+        {
+            "text": "Good bye",
+            "id": 35,
+            "count": 1
+        },
+        {
+            "text": "Good bye!",
+            "id": 36,
+            "count": 1
         }
     ],
     "links": {
@@ -457,6 +477,12 @@
         ],
         "43": [
             "Yes, we have nike"
+        ],
+        "44": [
+            "Good bye"
+        ],
+        "45": [
+            "Good bye!"
         ]
     }
 }
