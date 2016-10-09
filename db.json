@@ -74,11 +74,47 @@
             "text": "Works",
             "id": 15,
             "count": 1
+        },
+        {
+            "text": "Bandyms",
+            "id": 16,
+            "count": 1
+        },
+        {
+            "text": "Labas ir tau",
+            "id": 17,
+            "count": 1
+        },
+        {
+            "text": "Labas",
+            "id": 18,
+            "count": 1
+        },
+        {
+            "text": "Ką tu?",
+            "id": 19,
+            "count": 1
         }
     ],
     "answers": [
         {
+            "text": "Bandyms",
             "id": 1,
+            "count": 2
+        },
+        {
+            "text": "Kitoks",
+            "id": 2,
+            "count": 1
+        },
+        {
+            "text": "Bandau",
+            "id": 3,
+            "count": 1
+        },
+        {
+            "text": "Dar vienas",
+            "id": 4,
             "count": 1
         }
     ]

@@ -44,7 +44,7 @@ app.post('/webhook', function (req, res) {
             if ( ! event.message.is_echo) {
                 databaseHandler.update("questions", event.message.text);
                 var data = {
-                    question: "event.message.text",
+                    question: event.message.text,
                     suggestions: [
                         "First suggestion",
                         "Second suggestion",
@@ -92,5 +92,9 @@ io.on('connection', function(socket) {
     // Disconnect listener
     socket.on('disconnect', function() {
         console.log('Client disconnected.');
+    });
+    
+    socket.on('answer', function(data) {
+        databaseHandler.update('answers', data);
     });
 });

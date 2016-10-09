@@ -5,16 +5,16 @@ function ChatController($scope) {
             "Demo suggestion",
             "Fake suggestion 2"
         ];
-        $scope.roster = [];
-        $scope.name = '';
-        $scope.text = '';
 
-        socket.on('connect', function () {
-          $scope.setName();
-        });
+        $scope.messages = [
+            { bot: false, text: "Sveiki" },
+            { bot: true, text: "Laba diena" }
+        ];
 
         socket.on('question', function (data) {
             $scope.suggestions.length = 0;
+            
+            $scope.messages.push({ bot: false, text: data.question });
             
             data.suggestions.forEach(function(suggestion) {
                 $scope.suggestions.push(suggestion);
@@ -23,14 +23,10 @@ function ChatController($scope) {
           $scope.$apply();
         });
 
-        socket.on('roster', function (names) {
-          $scope.roster = names;
-          $scope.$apply();
-        });
-
         $scope.send = function send() {
+            $scope.messages.push({ bot: true, text: $scope.text });
           console.log('Sending message:', $scope.text);
-          socket.emit('message', $scope.text);
+            socket.emit('answer', $scope.text);
           $scope.text = '';
         };
 
