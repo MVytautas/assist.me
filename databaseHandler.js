@@ -21,12 +21,10 @@ module.exports = {
         
         if (id !== 1) {
             db.getData("/" + arrayName).forEach(function (arrayItem, index) {
-                console.log(text, arrayItem.text, exists);
                 if (arrayItem.text !== text || exists) { return; }
                 // item.count += 1;
                 db.push("/" + arrayName + "[" + index + "]/count", arrayItem.count += 1);
                 exists = true;
-                console.log('Increased count');
             });
         }
         

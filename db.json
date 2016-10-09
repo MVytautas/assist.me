@@ -18,7 +18,7 @@
         {
             "text": "bananas",
             "id": 4,
-            "count": 6
+            "count": 13
         },
         {
             "text": "Dubajus",
@@ -33,7 +33,47 @@
         {
             "text": "Test",
             "id": 7,
-            "count": 5
+            "count": 6
+        },
+        {
+            "text": "Labux",
+            "id": 8,
+            "count": 1
+        },
+        {
+            "text": "Kas tu?",
+            "id": 9,
+            "count": 1
+        },
+        {
+            "text": "Čia testas",
+            "id": 10,
+            "count": 1
+        },
+        {
+            "text": "Fake",
+            "id": 11,
+            "count": 1
+        },
+        {
+            "text": "Fake2",
+            "id": 12,
+            "count": 1
+        },
+        {
+            "text": "Nee",
+            "id": 13,
+            "count": 1
+        },
+        {
+            "text": "We",
+            "id": 14,
+            "count": 1
+        },
+        {
+            "text": "Works",
+            "id": 15,
+            "count": 1
         }
     ],
     "answers": [
