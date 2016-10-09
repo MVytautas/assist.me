@@ -18,7 +18,7 @@
     </div>
     <div class="container" style="margin-bottom: 30px;">
     <div class="row">
-      <div class="col-xs-3">
+      <div class="col-xs-4">
         <h3>Clients</h3>
         
         <uib-tabset active="activeUser" vertical="true" type="pills">
@@ -27,8 +27,8 @@
         </uib-tabset>
       </div>
     
-      <div class="col-xs-9">
-        <h3>Messages</h3>
+      <div class="col-xs-8">
+        <h3 class="user-name"><img class="user-image" ng-src="{{ '/img/' + users[activeUser].img + '.png' }}"> {{ users[activeUser].name }}</h3>
         <ul>
           <li ng-if="users[activeUser].messages.length === 0">No messages</li>
           <li ng-repeat="message in users[activeUser].messages" ng-class="{ user: !message.bot, bot: message.bot }">

@@ -23,7 +23,7 @@
         {
             "text": "hey",
             "id": 5,
-            "count": 4
+            "count": 5
         },
         {
             "text": "hola",
@@ -209,6 +209,11 @@
             "text": "https://fonts.google.com/specimen/Roboto",
             "id": 42,
             "count": 1
+        },
+        {
+            "text": "Nike",
+            "id": 43,
+            "count": 1
         }
     ],
     "answers": [
@@ -375,6 +380,11 @@
             "text": "Hsjsj",
             "id": 33,
             "count": 1
+        },
+        {
+            "text": "Yes, we have nike",
+            "id": 34,
+            "count": 1
         }
     ],
     "links": {
@@ -444,6 +454,9 @@
         ],
         "40": [
             "What kind of shoes do you like?"
+        ],
+        "43": [
+            "Yes, we have nike"
         ]
     }
 }

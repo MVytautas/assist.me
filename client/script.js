@@ -4,9 +4,9 @@ function ChatController($scope) {
     $scope.suggestions = [];
 
     $scope.users = {
-        "1131979180217385": { name: "Deividas", messages: [], suggestions: [] },
-        "1066750830110277": { name: "Simonas", messages: [], suggestions: [] },
-        "1215465971852445": { name: "Vytautas", messages: [], suggestions: [] }
+        "1131979180217385": { name: "Deividas Karžinauskas", messages: [], suggestions: [], img: "14610699_1277531758943815_1246537132_n" },
+        "1066750830110277": { name: "Simonas Žilinskas", messages: [], suggestions: [], img: "14593445_1277531812277143_1340981473_n" },
+        "1215465971852445": { name: "Vytautas Mikalainis", messages: [], suggestions: [], img: "14642600_1277531882277136_1520520873_n" }
     };
     $scope.activeUser = "1131979180217385";
 

@@ -36,3 +36,12 @@ li {
 a {
     color: #24B4D5;
 }
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-image {
+    height: 40px;
+    padding-right: 10px;
+}
