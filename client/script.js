@@ -8,7 +8,7 @@ function ChatController($scope) {
         "1066750830110277": { name: "Simonas", messages: [], suggestions: [] },
         "1215465971852445": { name: "Vytautas", messages: [], suggestions: [] }
     };
-    $scope.activeUser = "1131979180217385"; // Deividas
+    $scope.activeUser = "1131979180217385";
 
     $scope.messages = [];
 
@@ -67,3 +67,6 @@ function ChatController($scope) {
         $scope.text = suggestion;
     }
 }
+
+angular.module('myApp', ['ngAnimate', 'ngTouch', 'ui.bootstrap']);
+angular.module('myApp').controller('mainCtrl', ChatController);

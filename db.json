@@ -1,248 +1,449 @@
 {
-    "answers": [
+    "questions": [
         {
-            "text": "Bandau",
+            "text": "Hello",
             "id": 1,
-            "count": 1
+            "count": 3
         },
         {
-            "text": "la",
+            "text": "Hi",
             "id": 2,
-            "count": 1
+            "count": 3
         },
         {
-            "text": "nice",
+            "text": "I would like to know when your shop is open?",
             "id": 3,
             "count": 1
         },
         {
-            "text": "test",
+            "text": "Hey",
             "id": 4,
-            "count": 8
+            "count": 6
         },
         {
-            "text": "Second suggestion",
+            "text": "hey",
             "id": 5,
-            "count": 2
+            "count": 4
         },
         {
-            "text": "Third suggestion",
+            "text": "hola",
             "id": 6,
-            "count": 2
+            "count": 3
         },
         {
-            "text": "hi",
+            "text": "Labas",
             "id": 7,
             "count": 1
         },
         {
-            "text": "First suggestion",
+            "text": "labas",
             "id": 8,
-            "count": 2
+            "count": 1
         },
         {
-            "text": "tes",
+            "text": "Labadiena",
             "id": 9,
-            "count": 6
+            "count": 1
         },
         {
-            "text": "1",
+            "text": "labadiena",
             "id": 10,
             "count": 1
         },
         {
-            "text": "te",
+            "text": "Laba diena",
             "id": 11,
-            "count": 2
-        },
-        {
-            "text": "labas",
-            "id": 12,
-            "count": 3
-        },
-        {
-            "text": "dar labas",
-            "id": 13,
             "count": 1
         },
         {
-            "text": "dar",
+            "text": "laba diena",
+            "id": 12,
+            "count": 1
+        },
+        {
+            "text": "Hola",
+            "id": 13,
+            "count": 5
+        },
+        {
+            "text": "awesome",
             "id": 14,
             "count": 1
         },
         {
-            "text": "nu",
+            "text": "how are you?",
             "id": 15,
-            "count": 3
-        },
-        {
-            "text": "tai k1 tu?",
-            "id": 16,
             "count": 1
         },
         {
-            "text": "la?",
+            "text": "Where is my order?",
+            "id": 16,
+            "count": 2
+        },
+        {
+            "text": "I don't have one",
             "id": 17,
             "count": 1
         },
         {
-            "text": "rasyk",
+            "text": "where is my order",
             "id": 18,
             "count": 1
         },
         {
-            "text": "uo",
+            "text": "where is my order?",
             "id": 19,
             "count": 1
         },
         {
-            "text": "o",
+            "text": "thank you",
             "id": 20,
-            "count": 2
-        },
-        {
-            "text": "e",
-            "id": 21,
             "count": 3
         },
         {
-            "text": "a",
+            "text": "Thank you",
+            "id": 21,
+            "count": 1
+        },
+        {
+            "text": "nice",
             "id": 22,
             "count": 1
         },
         {
-            "text": "eik",
+            "text": "are you a bot?",
             "id": 23,
-            "count": 2
+            "count": 1
         },
         {
-            "text": "kitas klausiams",
+            "text": "Are you a bot?",
             "id": 24,
-            "count": 2
+            "count": 1
         },
         {
-            "text": "ne testas",
+            "text": "are you a robot?",
             "id": 25,
             "count": 1
         },
         {
-            "text": "tikrai",
+            "text": "Are you a robot?",
             "id": 26,
             "count": 1
         },
         {
-            "text": "ar supranti mane?",
+            "text": "omg",
             "id": 27,
             "count": 1
         },
         {
-            "text": "bananas",
+            "text": "bullshit",
             "id": 28,
             "count": 1
         },
         {
-            "text": "apelsinas",
+            "text": "fuck you",
             "id": 29,
             "count": 1
         },
         {
-            "text": "Labas",
+            "text": "When are you open?",
             "id": 30,
-            "count": 2
+            "count": 1
+        },
+        {
+            "text": "when are you open",
+            "id": 31,
+            "count": 1
+        },
+        {
+            "text": "when are you open?",
+            "id": 32,
+            "count": 1
+        },
+        {
+            "text": "open",
+            "id": 33,
+            "count": 1
+        },
+        {
+            "text": "tree",
+            "id": 34,
+            "count": 1
+        },
+        {
+            "text": "Open",
+            "id": 35,
+            "count": 1
+        },
+        {
+            "text": "What is your name?",
+            "id": 36,
+            "count": 1
+        },
+        {
+            "text": "Name",
+            "id": 37,
+            "count": 3
+        },
+        {
+            "text": "name",
+            "id": 38,
+            "count": 1
+        },
+        {
+            "text": "I want to buy something",
+            "id": 39,
+            "count": 1
+        },
+        {
+            "text": "Shoes",
+            "id": 40,
+            "count": 1
+        },
+        {
+            "text": "#24B4D5",
+            "id": 41,
+            "count": 1
+        },
+        {
+            "text": "https://fonts.google.com/specimen/Roboto",
+            "id": 42,
+            "count": 1
         }
     ],
-    "questions": [
+    "answers": [
         {
-            "text": "Laba",
             "id": 1,
             "count": 2
         },
         {
-            "text": "Aa",
+            "text": "test",
             "id": 2,
-            "count": 1
+            "count": 6
         },
         {
-            "text": "La",
+            "text": "Hello Vytautas",
             "id": 3,
             "count": 1
         },
         {
-            "text": "Ee",
+            "text": "Hello Vytautas, how can I help you?",
             "id": 4,
-            "count": 1
-        },
-        {
-            "text": "E",
-            "id": 5,
             "count": 2
         },
         {
-            "text": "Jo",
-            "id": 6,
-            "count": 3
-        },
-        {
-            "text": "Gg",
-            "id": 7,
+            "text": "Our shop is online, we are working 24/7",
+            "id": 5,
             "count": 1
         },
         {
-            "text": "Labas",
-            "id": 8,
-            "count": 16
+            "text": "Hi Simonas, how can I help you?",
+            "id": 6,
+            "count": 1
         },
         {
-            "text": "Kaip sekas",
+            "text": "Hello, how can I help you?",
+            "id": 7,
+            "count": 7
+        },
+        {
+            "text": "Hello",
+            "id": 8,
+            "count": 15
+        },
+        {
+            "text": "Hi",
             "id": 9,
             "count": 1
         },
         {
-            "text": "Hoi",
+            "text": "I know!",
             "id": 10,
             "count": 1
         },
         {
-            "text": "Nu ko",
+            "text": "asdf",
             "id": 11,
             "count": 1
         },
         {
-            "text": "Wut?",
+            "text": "I am good, how can I help you?",
             "id": 12,
             "count": 1
         },
         {
-            "text": "Klausau",
+            "text": "Could you provide your order number?",
             "id": 13,
-            "count": 11
+            "count": 4
         },
         {
-            "text": "Testas?",
+            "text": "Ok",
             "id": 14,
             "count": 1
         },
         {
-            "text": "Batai",
+            "text": "You welcome!",
             "id": 15,
+            "count": 1
+        },
+        {
+            "text": "testas",
+            "id": 16,
+            "count": 2
+        },
+        {
+            "text": "You are welcome!",
+            "id": 17,
+            "count": 3
+        },
+        {
+            "text": "Thank you!",
+            "id": 18,
+            "count": 1
+        },
+        {
+            "text": "No",
+            "id": 19,
+            "count": 2
+        },
+        {
+            "text": "That is very philosophical question.",
+            "id": 20,
+            "count": 2
+        },
+        {
+            "text": ":)",
+            "id": 21,
+            "count": 1
+        },
+        {
+            "text": ":(",
+            "id": 22,
+            "count": 2
+        },
+        {
+            "text": "We are open 24/7",
+            "id": 23,
+            "count": 4
+        },
+        {
+            "text": "24/7",
+            "id": 24,
+            "count": 1
+        },
+        {
+            "text": "Sorry, I don't understand.",
+            "id": 25,
+            "count": 2
+        },
+        {
+            "text": "I have a solution.",
+            "id": 26,
+            "count": 1
+        },
+        {
+            "text": "I am your personal assistant.",
+            "id": 27,
+            "count": 1
+        },
+        {
+            "text": "name",
+            "id": 28,
+            "count": 1
+        },
+        {
+            "text": "Sorry, I don't understand",
+            "id": 29,
+            "count": 3
+        },
+        {
+            "text": "What are you interested for?",
+            "id": 30,
+            "count": 1
+        },
+        {
+            "text": "What kind of shoes do you like?",
+            "id": 31,
+            "count": 1
+        },
+        {
+            "text": "Hey",
+            "id": 32,
+            "count": 4
+        },
+        {
+            "text": "Hsjsj",
+            "id": 33,
             "count": 1
         }
     ],
     "links": {
-        "5": [
-            "e",
-            "a",
-            "eik"
+        "1": [
+            "Hello Vytautas, how can I help you?"
         ],
-        "13": [
-            "kitas klausiams",
-            "bananas",
-            "apelsinas"
+        "3": [
+            "Our shop is online, we are working 24/7"
+        ],
+        "4": [
+            "Hello, how can I help you?"
+        ],
+        "5": [
+            "Hello"
         ],
         "14": [
-            "ne testas",
-            "tikrai",
-            "ar supranti mane?"
+            "I know!"
+        ],
+        "15": [
+            "I am good, how can I help you?"
+        ],
+        "16": [
+            "Could you provide your order number?"
+        ],
+        "17": [
+            "Ok"
+        ],
+        "20": [
+            "You welcome!",
+            "testas",
+            "You are welcome!"
+        ],
+        "22": [
+            "Thank you!"
+        ],
+        "23": [
+            "No"
+        ],
+        "25": [
+            "That is very philosophical question."
+        ],
+        "27": [
+            ":)"
+        ],
+        "28": [
+            ":("
+        ],
+        "30": [
+            "We are open 24/7"
+        ],
+        "33": [
+            "24/7"
+        ],
+        "34": [
+            "Sorry, I don't understand.",
+            "I have a solution."
+        ],
+        "36": [
+            "I am your personal assistant.",
+            "name"
+        ],
+        "37": [
+            "Sorry, I don't understand"
+        ],
+        "39": [
+            "What are you interested for?"
+        ],
+        "40": [
+            "What kind of shoes do you like?"
         ]
     }
 }

@@ -1,3 +1,7 @@
+h3, p, li, button {
+    font-family: 'Roboto', sans-serif;
+}
+
 .user {
     text-align: left;
 }
@@ -6,16 +10,29 @@
     text-align: right !important;
 }
 
-tbody {
-    display:block;
-    height:111px;
-    overflow:auto;
+.alert {
+    display: inline-block;
 }
-thead, tbody tr {
-    display:table;
-    width:100%;
-    table-layout:fixed;/* even columns width , fix width of table too*/
+
+ul {
+    list-style: none;
+    padding-left: 0;
 }
-thead {
-    width: calc( 100% - 1em )/* scrollbar is average 1em/16px width, remove it from thead width */
+
+li {
+    margin: 10px 0;
+}
+
+.label {
+    font-size: 100%;
+}
+
+.label-primary,
+.nav-pills > li.active > a,
+.btn-primary {
+    background-color: #24B4D5;
+}
+
+a {
+    color: #24B4D5;
 }

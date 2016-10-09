@@ -99,7 +99,10 @@ function getSuggestions(question) {
     if (questionObject === undefined || questionObject.id === undefined) { return []; }
     var questionId = questionObject.id;
     
-    suggestions = db.getData("/links/" + questionId);
+    try {
+        suggestions = db.getData("/links/" + questionId);
+    } catch(error) { }
+    
     if (suggestions === undefined) { return []; }
     
     console.log("Suggestions:", suggestions);
