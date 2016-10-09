@@ -88,11 +88,21 @@
         {
             "text": "Labas",
             "id": 18,
-            "count": 1
+            "count": 3
         },
         {
             "text": "Ką tu?",
             "id": 19,
+            "count": 1
+        },
+        {
+            "text": "Jau gaunu",
+            "id": 20,
+            "count": 1
+        },
+        {
+            "text": "Labas ar gauni?",
+            "id": 21,
             "count": 1
         }
     ],
@@ -115,6 +125,21 @@
         {
             "text": "Dar vienas",
             "id": 4,
+            "count": 1
+        },
+        {
+            "text": "Labas",
+            "id": 5,
+            "count": 1
+        },
+        {
+            "text": "Nu labas",
+            "id": 6,
+            "count": 1
+        },
+        {
+            "text": "Labas ir tau",
+            "id": 7,
             "count": 1
         }
     ]

@@ -34,6 +34,8 @@ app.get('/webhook', function (req, res) {
     }
 });
 
+var senderId;
+
 // handler receiving messages
 app.post('/webhook', function (req, res) {
     var events = req.body.entry[0].messaging;
@@ -53,9 +55,11 @@ app.post('/webhook', function (req, res) {
                 };
                 
                 io.emit('question', data);
+                
+                senderId = event.sender.id;
             }
-            
-            facebook.sendMessage(event.sender.id, {text: "Echo: " + event.message.text});
+            // console.log("sender id:" + event.sender.id);
+            // facebook.sendMessage(event.sender.id, {text: "Echo: " + event.message.text});
         }
     }
     res.sendStatus(200);
@@ -95,6 +99,7 @@ io.on('connection', function(socket) {
     });
     
     socket.on('answer', function(data) {
+        facebook.sendMessage(senderId, {text: data});
         databaseHandler.update('answers', data);
     });
 });
