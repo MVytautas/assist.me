@@ -26,6 +26,43 @@ app.get('/', function(request, response) {
   response.send(fileContents.toString());
   });
 
+  // Facebook Webhook
+app.get('/webhook', function (req, res) {
+  if (req.query['hub.verify_token'] === 'testbot_verify_token') {
+      res.send(req.query['hub.challenge']);
+  } else {
+      res.send('Invalid verify token');
+  }
+});
+
+var senderId;
+
+// handler receiving messages
+app.post('/webhook', function (req, res) {
+  console.log("Facebook webhook fired - message from Facebook received.");
+  var events = req.body.entry[0].messaging;
+  var i = 0;
+  
+  for (i; i < events.length; i++) {
+      var event = events[i];
+      if (event.message && event.message.text) {
+          
+          if ( ! event.message.is_echo) {
+              databaseHandler.update("questions", event.message.text);
+              var data = {
+                  question: event.message.text,
+                  suggestions: databaseHandler.getSuggestions(event.message.text)
+              };
+              
+              io.emit('question', { "data": data, "sender": event.sender.id });
+              
+              senderId = event.sender.id;
+          }
+      }
+  }
+  res.sendStatus(200);
+});
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
