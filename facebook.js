@@ -3,7 +3,7 @@ var request    = require('request');
 function sendMessage(recipientId, message) {
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
-        qs: {access_token: "EAACN3fv7nN0BAO1qGPq12NswFtP8L9RWN3YE9IFl1K9wvAQDla4THwqg7Bpwh73ebM8MSvnfJMfZAvPZBTrWroalp7ZACZBcw5DSS1xFU2GDqHIMKpb1K9wkoMMfmfFFntzNfmrwuA33Vu45UQq2vuoqyzKsWSINfrFsksbtfAZDZD"},
+        qs: {access_token: "EAACN3fv7nN0BAKH0chaIwdUGgNUbWFFP7csbIMDvS4gzUWSk9g8TTKClJEkvtFXLZBWLA3FL9E0rev8cKrS5FZBmM5TsHjZCCmelZAwE5dFSZCGnIYMkVNGFUEnlrZCJfEyU2eIblrWtgd2K0OEAF6bCSyvAUi5ZC54BfnDjK5RZB0IBQm41WJ9Q"},
         method: 'POST',
         json: {
             recipient: {id: recipientId},
@@ -22,7 +22,7 @@ function sendMessage(recipientId, message) {
 function getConversations() {
     request({
         url: 'https://graph.facebook.com/v2.6/me/conversations',
-        qs: {access_token: "EAACN3fv7nN0BAO1qGPq12NswFtP8L9RWN3YE9IFl1K9wvAQDla4THwqg7Bpwh73ebM8MSvnfJMfZAvPZBTrWroalp7ZACZBcw5DSS1xFU2GDqHIMKpb1K9wkoMMfmfFFntzNfmrwuA33Vu45UQq2vuoqyzKsWSINfrFsksbtfAZDZD"},
+        qs: {access_token: "EAACN3fv7nN0BAKH0chaIwdUGgNUbWFFP7csbIMDvS4gzUWSk9g8TTKClJEkvtFXLZBWLA3FL9E0rev8cKrS5FZBmM5TsHjZCCmelZAwE5dFSZCGnIYMkVNGFUEnlrZCJfEyU2eIblrWtgd2K0OEAF6bCSyvAUi5ZC54BfnDjK5RZB0IBQm41WJ9Q"},
         method: 'GET'
     }, function(error, response, body) {
         // console.log("Getting conversations");
