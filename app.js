@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var ejs = require('ejs');
 var fs = require('fs');
+var facebook = require('./facebook');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -54,7 +55,7 @@ app.post('/webhook', function (req, res) {
                   suggestions: databaseHandler.getSuggestions(event.message.text)
               };
               
-              io.emit('question', { "data": data, "sender": event.sender.id });
+              global.io.emit('question', { "data": data, "sender": event.sender.id });
               
               senderId = event.sender.id;
           }

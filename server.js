@@ -47,10 +47,10 @@ app.use('/api', router);
 // START THE SERVER
 // =============================================================================
 var server = app.listen(process.env.PORT || 3000);
-var io     = require('socket.io').listen(server);
+global.io     = require('socket.io').listen(server);
 
 // Add a connect listener
-io.on('connection', function(socket) {
+global.io.on('connection', function(socket) {
 
     console.log('Client connected.');
     // socket.emit('conversations', facebook.getConversations());
