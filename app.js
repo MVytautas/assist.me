@@ -21,10 +21,7 @@ app.set('view engine', 'jade');
 //app.engine('html', require('ejs').renderFile); // turn engine to use html
 
 app.get('/', function(request, response) {
-  var readFile = "client/index.html";
-  var fileContents = fs.readFileSync(readFile);
-  
-  response.send(fileContents.toString());
+  response.sendFile(path.join(__dirname, "client/index.html"));
   });
 
   // Facebook Webhook
@@ -70,7 +67,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'client')));
 
 app.use('/', routes);
 app.use('/users', users);
